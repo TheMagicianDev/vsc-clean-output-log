@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/MohamedLamineAllal/vsc-clean-output-log"
   },
+  "publisher": "TheMagicianDev",
   "engines": {
     "vscode": "^1.71.0"
   },
@@ -34,6 +35,7 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "package": "vsce package",
+    "publish": "vsce publish",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
@@ -48,11 +50,11 @@
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
     "@vscode/test-electron": "^2.1.5",
+    "@vscode/vsce": "^2.22.0",
     "eslint": "^8.18.0",
     "glob": "^8.0.3",
     "mocha": "^10.0.0",
-    "typescript": "^4.9.5",
-    "vsce": "^2.15.0"
+    "typescript": "^4.9.5"
   },
   "dependencies": {
     "chokidar": "^3.5.3"

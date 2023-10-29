@@ -24,21 +24,21 @@
 - All started by a proof of concept and tinkering. That turned to a fully well optimized extension ready to be used.
 
 > This repo at start was a work that i did in a day. While encountering this issue more than a year ago (2022). I didn't get the time to publish it. Or finish it.
-> - I'm surprised that years after now in end 2023. The issue still remain in vscode version `1.83.1`. The issue is always here.
+> - I'm surprised that years after now in `end 2023`. The issue still remain in vscode version `1.83.1`. The issue is always here.
 > - I decided to publish this. May be some will find it useful. As well as a teaching material.
 > - From just wanting to publish something that just work. I ended optimizing it relatively well. And put something pretty nice. Relying on you to tell better. And to catch on any problems. I tested it manually in macos and relatively well.
 
 ## Features
 
-- `Remove` and `clean` all misformed not interpreted `ansi colors codes`
-- One command to toggle activating and disabling the Log cleaning. Only use the cleaning when you need it.
-  - Disabling the Cleaning will free all filesystem listening resources. For neat and clean system and performance. And when you activate again they would be recreated seamlessly.
-- If a log is already containing bad ansi codes. Activating the cleaning will immediately clean it. And auto-refresh the output channel.
+- `Remove` and `clean` all misformed not interpreted `ansi colors codes`. So you can read clean readable text again.
+- `One command` to `toggle` `activating` and `disabling` the `Log cleaning`. Only use the cleaning when you need it.
+  - Disabling the Cleaning will free all filesystem listening resources. For neat and clean system and performance. And when you activate it again they would be recreated seamlessly.
+- If a log is `already` `containing` `bad ansi codes`. Activating the cleaning will `immediately` clean it. And `auto-refresh` the `output channel`.
 - All new output logs, will be automatically cleaned on the go.
 - When the Log cleaning is activated. The extension will listen to all logs of the active window. And only the active window.
-  - Different window works separately. You can activate it and disable it wherever you want. And keep the performance of the system well.
-- Listening does use chokidar. Which is well performing.
-- Truncate and append is used for updating the log files. And not a full re-write for good performance.
+  - `Different` windows works `separately`. You can activate it and disable it wherever you want. And keep the performance of the system well.
+- Listening does use `chokidar`. Which is well performing.
+- `Truncate` and `append` is used for updating the log files. And not a full re-write for good performance.
 - `CleanLog` channel is added by the extension. Where you can track and listen to all transformed logs of any Output channel. In one place. Also it's a second option just in case. The channel is well concise. And will log all transformations fully with the full detected change. And not only the transformed portions.
 
 ## The concept
@@ -52,14 +52,15 @@
 
 - Have `chokidar` listen and track the logs files (optimized).
 - For any log change clear and transform the file.
-- I did that successfully. In a proof of concept where i validated everything. (Early Last year + (2022)). This time i fully optimized everything. And integrate it in this vscode extension.
+- I did that successfully. In a proof of concept where i validated everything. (Early Last year + (2022)). This time i fully optimized everything. And integrate it in this vscode extension. Enjoy it.
 
 ### I believe Output channel should support ansi colors by default. Or at least with customization (configuration)
 
 - I don't know why this wasn't implemented. And for so long.
+- Or an api that allow us to modify existing default channels
 - Many people does need it.
 - You can for the time being. Do with this extension. Until one day.
-  - This extension can still serve some people in other cases. Where custom transformers other than the one cleaning `ansi colors codes` are needed.
+  - This extension can still serve some people in other cases. Where custom transformers other than the one cleaning `ansi colors codes`, are needed.
 
 ## ✨🔥 👉 How to use 👈 🔥✨
 

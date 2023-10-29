@@ -12,8 +12,12 @@
 - Mainly. The tools like `commitlint`, `lefthook`, `husky` as an example. And just about any others (testing tools ....). If they use `ANSI escape colors codes` in there output. Then we will get the red character with the color code as in the pic above, due to the ANSI codes that are not interpreted (Which are meant for terminals).
 - There is many open issues about it
   - https://github.com/microsoft/vscode/issues/571
-  - https://github.com/microsoft/vscode/issues/38834
+  - https://github.com/jest-community/vscode-jest/issues/117
+  - https://github.com/microsoft/vscode/issues/72021
+  - https://github.com/microsoft/vscode/issues/564
+  - https://github.com/microsoft/vscode/issues/243
   - https://github.com/microsoft/vscode/issues/40740
+  - https://github.com/microsoft/vscode/issues/38834
 
 > pytest output is next to impossible to debug without this feature. Please consider re-opening it. For now I've resorted to running pytest on the terminal and just ignore the IDE integration entirely.
 
@@ -172,6 +176,14 @@ Open for discussion
     - What is needed is a way to color a block without any characters. Or with some invisible characters
       - [ ] If you have any idea for this. Please let me know. And i'll implement it.
         - Is there any Decoration feature for Output channel that works programmatically? Or something similar. Any hack ?
+
+After some tinkering and validation. I see a possible way. I'll try to implement the colorization as soon as possible those next days [🔥Top priority🔥]
+
+> I did some extra validation. And i see myself able to fully support ansi colors codes colorization. I'll try to handle that on the weekend.
+Idea
+> - Use editor decoration. All Output panels are editors. And are accessible through vscode.window.visibleTextEditors, Fully validated with the usage of `setDecorations()`
+> ![](imgs/2023-10-29-11-31-33.png)
+> - I just need to check and validate Output channel change event (editor something) and the ranges handling.
 
 ## Extension Settings
 

@@ -1,5 +1,7 @@
 # ✨ Vscode-clean-output-log ✨ ( CleanLog )
 
+- [🛍️ Extension Marketplace link 🛍️](https://marketplace.visualstudio.com/items?itemName=TheMagicianDev.vsc-clean-output-log)  
+
 ## The issue
 
 - Have you ever encountered the output panel red character. And misformed output ???
